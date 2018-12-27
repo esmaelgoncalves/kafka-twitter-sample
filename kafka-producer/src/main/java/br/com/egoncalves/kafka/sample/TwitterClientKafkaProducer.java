@@ -114,10 +114,10 @@ public class TwitterClientKafkaProducer {
         hosebirdEndpoint.trackTerms(terms);
 
         // These secrets should be read from a config file
-        String consumerKey = "hvo2HkiSS5Gzli7FFkGlqIROI";
-        String consumerSecret = "5ip0vqC22cnUXdQEkCgplpB95yj3cb4VrPoY1y722hpRGWqHbh";
-        String token = "157143873-dZ1l4cAb0iC8z0kxBTohDo21ov3O9VuYzKSBcxMK";
-        String tokenSecret = "SytXaJQY3XOUB3qCsO8wB5Ktyj0719ZrDYZW3TOUyZkko";
+        String consumerKey = "";
+        String consumerSecret = "";
+        String token = "";
+        String tokenSecret = "";
 
         Authentication hosebirdAuth =
                 new OAuth1(consumerKey,
