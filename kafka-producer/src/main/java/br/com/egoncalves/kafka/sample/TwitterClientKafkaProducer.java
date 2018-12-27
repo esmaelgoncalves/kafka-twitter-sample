@@ -104,7 +104,7 @@ public class TwitterClientKafkaProducer {
     }
 
     public Client createTwitterClient(BlockingQueue<String> msgQueue) {
-        List<String> terms = Lists.newArrayList("bitcoin");
+        List<String> terms = Lists.newArrayList("espn", "nba", "lakers", "warriors");
 
         /** Declare the host you want to connect to, the endpoint, and authentication (basic auth or oauth) */
         Hosts hosebirdHosts = new HttpHosts(Constants.STREAM_HOST);
@@ -114,10 +114,10 @@ public class TwitterClientKafkaProducer {
         hosebirdEndpoint.trackTerms(terms);
 
         // These secrets should be read from a config file
-        String consumerKey = "L8uH9hqDKEC1pLZHG4kmgplcC";
-        String consumerSecret = "S4Pz8uUP2o5osRXjAisCLoJkxIB1Z9pDbXxshz4iVpZ12XG5Je";
-        String token = "157143873-2TXPiEWRVLrgbiLUhYKHipgKI6PZUL2aHlMRuWuQ";
-        String tokenSecret = "7riYLTkLz0q3pFnDsZlZgybboSpR3O0BeRXAbw3OxI5Nu";
+        String consumerKey = "hvo2HkiSS5Gzli7FFkGlqIROI";
+        String consumerSecret = "5ip0vqC22cnUXdQEkCgplpB95yj3cb4VrPoY1y722hpRGWqHbh";
+        String token = "157143873-dZ1l4cAb0iC8z0kxBTohDo21ov3O9VuYzKSBcxMK";
+        String tokenSecret = "SytXaJQY3XOUB3qCsO8wB5Ktyj0719ZrDYZW3TOUyZkko";
 
         Authentication hosebirdAuth =
                 new OAuth1(consumerKey,
